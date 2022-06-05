@@ -1,0 +1,2 @@
+class DeltaBaseZero(Exception):
+    pass
