@@ -39,3 +39,5 @@ optional arguments:
 
 
 In the sequence of clips on the first clip (both video and audio), put IN on the clapper, on the last OUT
+
+If not set IN OUT an exception is thrown errors.DeltaBaseZero
