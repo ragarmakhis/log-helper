@@ -3,8 +3,8 @@ from typing import List
 from lxml import etree
 from lxml.etree import _Element
 
-from config import OUTPUT_PATH
-from log_helper import WorkArguments
+from log_helper.config import OUTPUT_PATH
+from log_helper.log_helper import WorkArguments
 
 
 def get_bin_list(arguments: WorkArguments) -> List[_Element]:

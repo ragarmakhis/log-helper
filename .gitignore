@@ -1,0 +1,5 @@
+/build/
+/dist/
+/log_helper.egg-info/
+/venv/
+/.idea/

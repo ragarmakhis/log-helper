@@ -1,8 +1,8 @@
 import argparse
 import sys
 
-from utils.read_write_xml import get_bin_list, write_xml
-from log_helper import get_xml_items, WorkArguments
+from log_helper.utils.read_write_xml import get_bin_list, write_xml
+from log_helper.log_helper import get_xml_items, WorkArguments
 
 
 def get_arguments() -> WorkArguments:

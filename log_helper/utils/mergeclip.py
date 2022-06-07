@@ -1,6 +1,6 @@
 import uuid
 
-from utils.fcpxml import MergedClip, Clip
+from log_helper.utils.fcpxml import MergedClip, Clip
 
 
 def merge(video_clip: Clip, audio_clip: Clip):

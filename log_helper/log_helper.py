@@ -4,10 +4,10 @@ from typing import List, NamedTuple
 
 from lxml.etree import _Element
 
-from config import delimiters, hundred_episodes_after_60, hundred_episodes_up_to_60
-from errors import DeltaBaseZero
-from utils.fcpxml import Clip, Bin
-from utils.mergeclip import merge
+from log_helper.config import delimiters, hundred_episodes_after_60, hundred_episodes_up_to_60
+from log_helper.errors import DeltaBaseZero
+from log_helper.utils.fcpxml import Clip, Bin
+from log_helper.utils.mergeclip import merge
 
 FRAMESPERDAY = 2160000
 
