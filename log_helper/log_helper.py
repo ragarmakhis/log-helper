@@ -89,14 +89,11 @@ def insert_aux_timecode(clip: Clip, delta: Delta):
     if not current_frame:
         current_frame = 0
 
-    if delta.base == 0:
+    if not delta.base:
+        print(clip.logginginfo)
         raise DeltaBaseZero
 
-    try:
-        k = (current_frame - delta.in_frame) / delta.base
-    except ZeroDivisionError:  # as e:
-        print(clip.logginginfo)
-        raise ZeroDivisionError("Возможно в бине отсутствует видео. Не верный ключ '-B'")
+    k = (current_frame - delta.in_frame) / delta.base
 
     frames_with_delta = current_frame + delta.delta_in + round(delta.k_max * k)
     if frames_with_delta > FRAMESPERDAY - 1:
